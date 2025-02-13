@@ -78,32 +78,35 @@
 
 ## 1. 데이터 아키텍처
 - **설계 개요**:
-  - 데이터 수집: 
-  - 데이터 저장: [저장 방식]
-  - 분석 및 시각화: [사용 기술]
-
+  - 데이터 수집: Selenium, API 연동
+  - 데이터 저장: csv 파일
+  - 분석 및 시각화: Konlpy Okt, Plotly, Folium, Streamlit
 ## 2. 기술 스택
-- 데이터 수집: Python, BeautifulSoup4, Scrapy, API 연동
-- 분석 및 처리: Pandas, NumPy, scikit-learn, scipy
-- 시각화: Matplotlib, Seaborn, Streamlit
+- 데이터 수집: Python, Selenium, Pandas, Random, Time
+- 분석 및 처리: Pandas, Emoji, Konlpy, Okt, Collections, Re
+- 시각화: Plotly, Pandas, numpy
+- 프로토타입 구현 : Streamlit, Folium, Requests, Urllib, Re, Json, Pandas, Plotly, Numpy
 
 ## 3. 설계 이미지
-![아키텍처 다이어그램](../assets/architecture_diagram.png)
+![3팀_2차프로젝트_발표용 (5)](https://github.com/user-attachments/assets/90384526-1f6f-4264-b597-a21426b0e3d4)
+
 
 ---------------------------
 
 # 데이터 연동 정의서
 
 ## 1. 데이터 정의
-- 데이터 소스: 고객 구매 데이터
+- 데이터 소스: 음식점 후(리뷰)
 - 주요 컬럼:
-  - user_id: 사용자 ID
-  - timestamp: 구매 시간
-  - joindate: 가입일자
+  - nickname : 작성자
+  - review : 후기
+  - date : 후기 작성일자
+  - visit_count : 방문 횟수
+  - methond : 후기 작성 인증 방식
 
 ## 2. 수집 방식
-- 연동 방식: API 또는 Batch 수집
-- 연동 주기: 매일 자정
+- 연동 방식: Selenium 웹스크래핑 방식
+- 연동 주기: 30분마다
 
 --------------------------
 
@@ -111,24 +114,30 @@
 # 시각화 리포트
 
 ## 1. 분석 결과 요약
-- 고객 구매 데이터 분석 결과:
-  - 주요 패턴: [결과 요약]
-  - 통계적 분석 결과: [결과 요약]
+- 맛형용사 데이터 분석 결과:
+  - 음식점별 주력 메뉴에 따라 그 특성을 대표하는 맛형용사 추출됨
+  - 동일 메뉴를 판매하더라도 주력 메뉴나 조리법에 따라 (손)맛의 특징이 구분됨
+  - 체인점의 경우 같은 재료와 레시피를 사용하여 대체로 배슷한 맛형용사가 추출됨
+  - 대중적인 대형 체인점의 경우 맛에 대한 구체적인 평가보다는 기타 지표(친절도, 청결도 등)에 대한 리뷰가 대부분임
 
 ## 2. 대시보드
-![대시보드 스크린샷](../assets/dashboard_screenshot.png)
+![3팀_2차프로젝트_발표용](https://github.com/user-attachments/assets/0dbc1dc6-ac5a-41be-930d-27e7f4cae79f)
+![3팀_2차프로젝트_발표용 (1)](https://github.com/user-attachments/assets/a2ffb2b9-78eb-4f67-a03d-db440cfd0279)
+![3팀_2차프로젝트_발표용 (2)](https://github.com/user-attachments/assets/8ca1e5cb-173f-49ed-b420-bf61a5ae8a41)
+![3팀_2차프로젝트_발표용 (3)](https://github.com/user-attachments/assets/c2fa6686-7efe-4080-8fa1-dc45c72471f8)
+
 
 ## 3. 제안
-- 데이터를 기반으로 [구체적인 제안 내용]
+- 대형 프랜차이즈보다는 개인 사업자 혹은 신 체인점에 대해 상위 노출 기회를 주고, 포털 사용자에게는 새로운 검색 경험을 제공
 
 --------------------------
 
 # 프로젝트 회고
 
 ## 1. 프로젝트 개요
-- **프로젝트 이름**: [프로젝트 명]
-- **기간**: [YYYY-MM-DD ~ YYYY-MM-DD]
-- **팀 구성원**: [팀원 이름]
+- **프로젝트 이름**: !아무거나 : 아무거나 빼고 다
+- **기간**: 2024-02-03 ~ 2024-02-11
+- **팀 구성원**: 홍동휘(팀장), 강재연, 김경은, 이동현
 
 ---
 
@@ -174,7 +183,8 @@
 
 ## 4. 프로젝트 주요 결과 요약
 - **성과**:
-  - 구매 이력 데이터를 활용한 분석 모델 개발 완료
-  - 대시보드와 보고서 배포 성공
+  - 맛형용사를 활용한 분석 모델 개발
+  - Streamlit을 활용하여 맛형용사 모델을 사용해볼 수 있는 사이트 구현
+  - 대시보드와 보고서 배포
 - **결과물**:
-  - [링크]: 프로젝트 산출물 GitHub 저장소
+  - [링크]: [프로젝트 산출물 GitHub 저장소](https://github.com/KpmgFuture-Academy/fa03_2nd_NOT_ANYTHING)
