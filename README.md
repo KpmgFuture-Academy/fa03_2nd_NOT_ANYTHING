@@ -32,7 +32,6 @@ https://github.com/user-attachments/assets/1edcf5ba-7790-413b-801b-2b98eb385270
 - **소비자가 입력한 맛 형용사를 기반으로 취향이 반영된 음식점을 제안하는 API 서비스**
 - 사용자가 원하는 맛 형용사(예: 칼칼한, 담백한, 기름진)를 입력하거나, 긍정/부정 키워드 기반의 필터링을 적용하여 기존의 네이버 지도 리뷰와 매칭되는 음식을 보유한 음식점을 제시하는 지도 연동 API 서비스
 
-
 ## 3. 문제 정의 및 목적
 - 식사메뉴 선정 과정에 대한 스트레스를 해결할 수 없을까?
 - 소비자들이 리뷰를 더 객관적으로 바라볼 수 있는 방법은 없을까?
@@ -100,7 +99,7 @@ https://github.com/user-attachments/assets/1edcf5ba-7790-413b-801b-2b98eb385270
 -----------------------------
 
 # 작업 분할 구조 (WBS)
-![image](https://github.com/user-attachments/assets/1d2fcd58-9e45-4032-b196-61dcfaba60b2)
+![image](https://github.com/user-attachments/assets/701f6648-c219-47d6-b569-0b1b7746ca97)
 
 ---------------------------
 
@@ -138,8 +137,8 @@ https://github.com/user-attachments/assets/1edcf5ba-7790-413b-801b-2b98eb385270
 - 시각화: Plotly, Pandas, numpy
 - 프로토타입 구현 : Streamlit, Folium, Requests, Urllib, Re, Json, Pandas, Plotly, Numpy
 
-## 3. 설계 이미지
-![image](https://github.com/user-attachments/assets/d353f782-baae-485e-bf27-b53549843613)
+## 3. 서비스 흐름도
+![image](https://github.com/user-attachments/assets/0bb70cdd-965c-49dc-86c6-293c9f66591c)
 
 ---------------------------
 
@@ -160,7 +159,6 @@ https://github.com/user-attachments/assets/1edcf5ba-7790-413b-801b-2b98eb385270
 
 --------------------------
 
-
 # 시각화 리포트
 
 ## 1. 분석 결과 요약
@@ -171,14 +169,17 @@ https://github.com/user-attachments/assets/1edcf5ba-7790-413b-801b-2b98eb385270
   - 대중적인 대형 체인점의 경우 맛에 대한 구체적인 평가보다는 기타 지표(친절도, 청결도 등)에 대한 리뷰가 대부분임
 
 ## 2. 대시보드
-![3팀_2차프로젝트_발표용](https://github.com/user-attachments/assets/0dbc1dc6-ac5a-41be-930d-27e7f4cae79f)
-![3팀_2차프로젝트_발표용 (1)](https://github.com/user-attachments/assets/a2ffb2b9-78eb-4f67-a03d-db440cfd0279)
-![3팀_2차프로젝트_발표용 (2)](https://github.com/user-attachments/assets/8ca1e5cb-173f-49ed-b420-bf61a5ae8a41)
-![3팀_2차프로젝트_발표용 (3)](https://github.com/user-attachments/assets/c2fa6686-7efe-4080-8fa1-dc45c72471f8)
-
+### 음식점별 주력 메뉴에 따라 그 특성을 대표하는 맛형용사 추출됨
+![image](https://github.com/user-attachments/assets/91664d1b-49cd-4d76-b534-d1767ca62bee)
+### 동일 메뉴를 판매하더라도 주력 메뉴나 조리법에 따라 (손)맛의 특징이 구분됨
+![image](https://github.com/user-attachments/assets/0266e6cf-9316-4a74-983e-01fbf108028f)
+### 체인점의 경우 같은 재료와 레시피를 사용하여 대체로 배슷한 맛형용사가 추출됨
+![image](https://github.com/user-attachments/assets/ff6a1fdb-5340-4412-b6d5-a410a84dc228)
+### 대중적인 대형 체인점의 경우 맛에 대한 구체적인 평가보다는 기타 지표(친절도, 청결도 등)에 대한 리뷰가 대부분임
+![image](https://github.com/user-attachments/assets/fc403f88-005d-468f-b9af-6142fc3b270d)
 
 ## 3. 기대효과
-- 사용자가 음식점의 맛형용사 리뷰를 시각화 자료를 통해 확인할 수 있게 함으로써 음식점이 이를 다양한 마케팅, 브랜딩 전략으로 활용할 수 있도록 도모  
+- 사용자가 음식점의 맛형용사 리뷰를 시각화 자료를 통해 확인할 수 있게 함으로써 음식점이 이를 다양한 마케팅, 브랜딩 전략으로 활용할 수 있도록 지원
 - 대형 프랜차이즈보다는 개인 사업자에 적합한 서비스로, 소상공인에게 상위 노출 기회를 주고, 포털 사용자에게는 새로운 검색 경험을 제공
 - 추후 맛형용사 키워드 선택 기능을 제공하여 음식점을 방문한 고객이 리뷰를 보다 더 풍부하게 작성할 수 있도록 독려
 - '맛있어요' 와 같은 주관적 리뷰 보다 '매워요', '달달해요', '칼칼해요'와 같은 더 구체적인 맛에 대한 리뷰를 작성할 수 있는 환경 제공
