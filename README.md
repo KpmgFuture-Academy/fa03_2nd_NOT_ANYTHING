@@ -138,7 +138,8 @@ https://github.com/user-attachments/assets/1edcf5ba-7790-413b-801b-2b98eb385270
 - 프로토타입 구현 : Streamlit, Folium, Requests, Urllib, Re, Json, Pandas, Plotly, Numpy
 
 ## 3. 서비스 흐름도
-![image](https://github.com/user-attachments/assets/0bb70cdd-965c-49dc-86c6-293c9f66591c)
+![image](https://github.com/user-attachments/assets/341c6153-87c4-48a7-8197-c0d71c1c6a77)
+
 
 ---------------------------
 
